@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .boxes {
+    background: lightgray;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+  }
+
+  img {
+      position: fixed;
+      width: inherit;
+      height: inherit; 
+  }
+
+  img:hover {
+      opacity: 0;
+      background: coral;
+  }
+  
+  .box:hover {
+    animation-name: expand;
+    animation-duration: .4s;
+    animation-fill-mode: forwards
+  }
+  
+  @keyframes expand {
+    from {}
+    to {background: rgba(255, 255, 255, 0); width: 200px; height: 100px; color: white;}
+  }
+  
+  #text {
+    text-decoration: none;
+    font-size: .7em;
+    color: rgb(28, 28, 28);
+    display: flex;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #text:hover {
+    display: flex;
+    animation-name: reveal;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    height: 100%;
+    width: 100%;
+  }
+  
+  @keyframes reveal {
+    from {}
+    to {
+      opacity: 100;
+      background: whitesmoke;
+    }
+  }
+  
+  .box1 {
+    background: #fae222;
+  }
+  
+  .box2 {
+    background: #efa222
+  }
+  
+  .box3 {
+    background: #cef
+  }
+  
+  .box4 {
+    background: #fec
+  }
+  
